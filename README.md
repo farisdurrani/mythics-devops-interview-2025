@@ -10,7 +10,8 @@ Interview Challenge to provision resources using Terraform
 
 # Programming Challenge
 
-Write a program in your favorite language to:
+Write a program in python to accept an interactive input keyword string and by using that read string , search through the data loaded from a json file : problem.json and print out the url name if a 
+input string matches the name and/or description.
 
 
 # Terraform
