@@ -50,8 +50,6 @@ input string matches the name and/or description.
 Before beginning ansible section
 1. Under ansible directory, create a role to:
     1. Configure the instance so that you are able to deploy and execute the programming challenge
-    1. Deploy and run the code in this directory to generate the output file: `outfile1`
-    1. Print the contents of the `outfile1` onto the console
 1. Create a role to:
     1. Ping the instance created in the private subnet.
     1. Ping the instance and dump the output on the console.
