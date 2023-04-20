@@ -46,7 +46,7 @@
     ```
     [DEMO4]
     user=ocid1.user.oc1..aaaaaaaa7zzayonebm5ekziewzdilwrtbfhjqh7g5ogzzv2xe6acpjkqibma
-    fingerprint=1c:36:72:03:15:b7:d3:e0:9c:b3:88:6f:c3:b8:a0:37
+    fingerprint=ee:93:61:74:48:06:fe:a3:f3:bf:1f:b6:2c:03:da:51
     tenancy=ocid1.tenancy.oc1..aaaaaaaapgohxfz7epi6c3xs4vfn5pu6ej3hrjjn2zxmk5q5zsfhznq7tqeq
     region=us-ashburn-1
     key_file=<path_to_private_key_file>
