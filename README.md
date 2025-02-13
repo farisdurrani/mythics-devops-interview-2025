@@ -44,7 +44,7 @@ Write a program in Python (3.6+) to accept an interactive input keyword string a
      - outgoing traffic to `all-iad-services-in-oracle-services-network`
      - incoming ssh traffic from subnet `IC_pub_snet-A`
    - Network security group `ic_pvt_nsg-B` should allow ICMP traffic from `IC_pub_snet-A` _only_ to the compute instance `ic_pvt_vm-B`
-1. Modify the public compute instance's metadata to add your ssh public key and also add the public key [ssh_key.pub](ssh_key.pub) to the private compute instance for grading purposes.
+1. Modify the public compute instance's metadata to add your ssh public key and also add the public key (we'll give it to you) to the private compute instance for grading purposes.
 1. Create `output.tf` to output public_ip of compute instance
 1. Create modules of the different resources that you are using. Grading will also be done based on how modularized and reusable your code is.
 
