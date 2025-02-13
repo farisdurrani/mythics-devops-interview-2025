@@ -1,5 +1,6 @@
 # Devops 2025 Mythics Interview Challenge Terraform
 
+> Git repo: https://github.com/farisdurrani/mythics-devops-interview-2025 <br/>
 > Forked from: https://github.com/praveenmogili/devops-2023 <br/>
 > Authors: Praveen Mogili, Zeinab El-Rewini, Faris Durrani (Mythics, LLC)
 
