@@ -1,84 +1,52 @@
-# Steps to Access Guest OCI Account on mythicsdemo4 tenancy
+# Steps to Access Guest OCI Account on mythicsdemo2 tenancy
 
-## Login to OCI Console
+You will not be given console UI access to Oracle Cloud. Instead, you will be given API access to the Oracle Cloud Infrastructure (OCI) tenancy.
 
-1. Vist URL : `https://www.cloud.oracle.com`
-1. Enter tenancy name as `mythicsdemo4`
-1. Username: `lab_guest`
-1. Login should be successful and you should be shown the OCI Console Dashboard
+You may ask the interviewer to screenshare of the current state of the resources on the console anytime.
 
-## Setup oci-cli for the mythicsdemo4 tenancy
+## Set up OCI access
 
-1. Install oci-cli
+Create, or append, the file `~/.oci/config` with the following content
 
-    ```commandline
-    pip install oci
-    pip install oci-cli
-    ```
-1. Run the command
+```
+[DEMO2]
+user=ocid1.user.oc1..aaaaaaaavn44yvmn3odhidnnmddbah3cxu6yr6evhmzxpbyvacuk5ueadlgq
+fingerprint=fd:04:15:fe:79:5e:4d:db:16:f4:a4:ce:28:4d:8b:9f
+tenancy=ocid1.tenancy.oc1..aaaaaaaan4to7ikejs4l65qpxmh3hzdhl4zq5i3cxpawtkgbvvj5f52x5lea
+region=us-ashburn-1
+key_file=<path to your private keyfile> # TODO
+```
 
-    ```commandline
-    oci os ns get
-    ```
-    You will have the following prompts. Answer them as specified:
+The private key file will be sent to you.
 
-    ```
-    ERROR: Could not find config file
-    Do you want to create a new config file? [Y/n]: y
-    Do you want to create a new config by logging in through a browser? [Y/n] : y
-    Enter a region by index or name : 43
-    ```
-    A browser window should open.
+## Run the following sample Terraform script
 
-    Enter the tenancy name : `mythicsdemo4`
+This script creates a new Virtual Private Cloud Network.
 
-    Login using the above mentioned credentials.
+> [!NOTE]
+> If you do not have Terraform installed, install it from [here](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
 
-    The terminal should proceed in creating the OCI config.
-    Verify  the config by running the command again
-    ```
-    oci os ns get
-
-    oci network vcn create --compartment-id ocid1.compartment.oc1..aaaaaaaau2d5tlzxsvkpz3iuzhuo4uemcn7kzmkv6fhjqbpxdzpg5ijz4tqq --cidr-block 198.16.16.0/24
-    ```
-
-1. If you already have an oci config setup, then add the below config
-    ```
-    [DEMO4]
-    user=ocid1.user.oc1..aaaaaaaa7zzayonebm5ekziewzdilwrtbfhjqh7g5ogzzv2xe6acpjkqibma
-    fingerprint=ee:93:61:74:48:06:fe:a3:f3:bf:1f:b6:2c:03:da:51
-    tenancy=ocid1.tenancy.oc1..aaaaaaaapgohxfz7epi6c3xs4vfn5pu6ej3hrjjn2zxmk5q5zsfhznq7tqeq
-    region=us-ashburn-1
-    key_file=<path_to_private_key_file>
-    ```
-
-    The private key file for the same would be sent to you.
-
-
-## Run the following sample terraform script
-
-```terraform
+```tf
 terraform {
   required_providers {
     oci = {
-      source = "hashicorp/oci"
+      source = "oracle/oci"
+      version = ">= 6.0.0"
     }
   }
 }
 
 provider "oci" {
-    region = "us-ashburn-1" 
-    config_file_profile = <"DEFAULT" | "DEMO4">
+    region = "us-ashburn-1"
+    config_file_profile = "DEMO2"
 }
-
-
 
 resource "oci_core_vcn" "internal" {
   dns_label      = "internal"
-  cidr_block     = "172.16.0.0/20"
-  compartment_id = "ocid1.compartment.oc1..aaaaaaaau2d5tlzxsvkpz3iuzhuo4uemcn7kzmkv6fhjqbpxdzpg5ijz4tqq"
+  cidr_block     = "10.0.0.0/16"
+  compartment_id = "ocid1.compartment.oc1..aaaaaaaawegp67yo7ggm6q2ywen2el27udvqjwpmn5uuyfhydusai55yrepa"
   display_name   = "Sample VCN"
 }
-
 ```
 
+Destroy the resources after you are done testing Terraform.
