@@ -10,7 +10,7 @@ Mythics DevOps Interview Challenge to provision resources using Terraform, Pytho
 
 1. Solve the programming challenge
 1. Create the resources on Oracle Cloud using Terraform
-1. Create Ansible roles and playbooks to perform tasks
+1. Create an Ansible playbook to perform tasks
 
 ## Rules
 
