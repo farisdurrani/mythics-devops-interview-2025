@@ -1,5 +1,7 @@
 # Steps to Access Guest OCI Account on mythicsdemo2 tenancy
 
+_These credentials may be out-of-date, please confirm with the interviewer_
+
 You will not be given console UI access to Oracle Cloud. Instead, you will be given API access to the Oracle Cloud Infrastructure (OCI) tenancy.
 
 You may ask the interviewer to screenshare of the current state of the resources on the console anytime.
