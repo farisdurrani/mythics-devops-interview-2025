@@ -11,7 +11,7 @@ Create, or append, the file `~/.oci/config` with the following content
 ```
 [DEMO2]
 user=ocid1.user.oc1..aaaaaaaavn44yvmn3odhidnnmddbah3cxu6yr6evhmzxpbyvacuk5ueadlgq
-fingerprint=fd:04:15:fe:79:5e:4d:db:16:f4:a4:ce:28:4d:8b:9f
+fingerprint=b2:29:d3:26:16:6b:58:c8:ac:de:b4:73:0b:b0:60:57
 tenancy=ocid1.tenancy.oc1..aaaaaaaan4to7ikejs4l65qpxmh3hzdhl4zq5i3cxpawtkgbvvj5f52x5lea
 region=us-ashburn-1
 key_file=<path to your private keyfile> # TODO
@@ -44,7 +44,7 @@ provider "oci" {
 resource "oci_core_vcn" "internal" {
   dns_label      = "internal"
   cidr_block     = "10.0.0.0/16"
-  compartment_id = "ocid1.compartment.oc1..aaaaaaaawegp67yo7ggm6q2ywen2el27udvqjwpmn5uuyfhydusai55yrepa"
+  compartment_id = "ocid1.compartment.oc1..aaaaaaaaysxb7dpwnsglkrs4b7uxfzcolhdij5a6swhbt7cf3j6pvjkohkqa"
   display_name   = "Sample VCN"
 }
 ```
