@@ -30,7 +30,7 @@ Write a program in Python (3.6+) to accept an interactive input keyword string a
    - Gateways `IC_IG-A` and `IC_SG-A`
    - Compute instances `ic_pub_vm-A`, `ic_pvt_vm-B`, and `ic_pvt_vm-C`
 1. Make sure to use the following variables in your terraform code:
-   - Compartment ID : `ocid1.compartment.oc1..aaaaaaaawegp67yo7ggm6q2ywen2el27udvqjwpmn5uuyfhydusai55yrepa`
+   - Compartment ID : `ocid1.compartment.oc1..aaaaaaaawegp67yo7ggm6q2ywen2el27udvqjwpmn5uuyfhydusai55yrepa` (Confirm with interviewer)
    - Image ID : `ocid1.image.oc1.iad.aaaaaaaawoewdiy5y3abewk3byd6456ry5qsphzsm6mjw7jcwnxobs2c7jjq` (Oracle-Linux-8.10-2024.11.30-0)
    - Shape : `VM.Standard.E5.Flex`
    - Availability Domain : `ktgl:US-ASHBURN-AD-2`
