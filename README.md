@@ -54,4 +54,4 @@ Write a program in Python (3.6+) to accept an interactive input keyword string a
 Create a single playbook to execute the below tasks from within the public instance. Show the terminal output of the playbook execution.
 
 1.  Ping the private instance `ic_pvt_vm-B` from the public instance.
-1.  On the public instnace, `ic_pub_vm-A`, Create two groups named privilleged and unprivilleged. Add two users named admin and guest. Place the guest user in the unprivileged group and admin user in the privilliged group.
+1.  On the public instance, `ic_pub_vm-A`, Create two groups named privileged and unprivileged. Add two users named admin and guest. Place the guest user in the unprivileged group and admin user in the privileged group.
