@@ -53,5 +53,5 @@ Write a program in Python (3.6+) to accept an interactive input keyword string a
 
 Create a single playbook to execute the below tasks from within the public instance. Show the terminal output of the playbook execution.
 
-1.  Ping the private instance from the public instance.
+1.  Ping the private instance `ic_pvt_vm-B` from the public instance.
 1.  Run the python program. To accept the input, feel free to use the `expect` module or modify it to accept command line arguments.
