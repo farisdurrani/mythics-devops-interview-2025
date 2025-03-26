@@ -46,7 +46,7 @@ provider "oci" {
 resource "oci_core_vcn" "internal" {
   dns_label      = "internal"
   cidr_block     = "10.0.0.0/16"
-  compartment_id = "ocid1.compartment.oc1..aaaaaaaaysxb7dpwnsglkrs4b7uxfzcolhdij5a6swhbt7cf3j6pvjkohkqa"
+  compartment_id = "compartment_id" #obtain from interviewer
   display_name   = "Sample VCN"
 }
 ```
