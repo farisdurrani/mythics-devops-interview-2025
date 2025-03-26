@@ -11,9 +11,9 @@ You may ask the interviewer to screenshare of the current state of the resources
 Create, or append, the file `~/.oci/config` with the following content
 
 ```
-[DEMO2]
-user=ocid1.user.oc1..aaaaaaaavn44yvmn3odhidnnmddbah3cxu6yr6evhmzxpbyvacuk5ueadlgq
-fingerprint=b2:29:d3:26:16:6b:58:c8:ac:de:b4:73:0b:b0:60:57
+[DEFAULT]
+user=ocid1.user.oc1..aaaaaaaan5jt7wdaejjmlfoi7o63czcnzexzuesofrxayzruvgejltcflfta
+fingerprint=39:b0:fa:35:bb:d1:bb:12:24:b7:a7:3c:e4:a0:1a:da
 tenancy=ocid1.tenancy.oc1..aaaaaaaan4to7ikejs4l65qpxmh3hzdhl4zq5i3cxpawtkgbvvj5f52x5lea
 region=us-ashburn-1
 key_file=<path to your private keyfile> # TODO
@@ -46,7 +46,7 @@ provider "oci" {
 resource "oci_core_vcn" "internal" {
   dns_label      = "internal"
   cidr_block     = "10.0.0.0/16"
-  compartment_id = "ocid1.compartment.oc1..aaaaaaaaysxb7dpwnsglkrs4b7uxfzcolhdij5a6swhbt7cf3j6pvjkohkqa"
+  compartment_id = "compartment_id" #obtain from interviewer
   display_name   = "Sample VCN"
 }
 ```
