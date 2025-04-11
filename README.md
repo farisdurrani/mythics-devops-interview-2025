@@ -21,13 +21,17 @@ See https://git.mythics.dev/fdurrani/answers-mythics-devops-interview-2025.
 1. Open-book, open-internet, open-AI
 1. No collaboration with live humans
 
+## Work environment
+For this problemset we will provide command line interface and code editor within Oracle Cloud Infrastructure. Access "https://idcs-f74b479abbd240379057587b66a852f1.identity.oraclecloud.com/ui/v1/signin" and credentials will be provided.
+
+Once logged in you can click on developer tools where you can use cloud editor (code editor) and cloud shell (command line interface). You will see in the home directroy the code repository cloned where you can work through each problem.
+
 ## Python Programming Challenge
 
 Write a program in Python (3.6+) to accept an interactive input keyword string and by using that read string, search through the data loaded from a json file : [problem.json](problem.json) and print out the URL name if an input string matches part of the API name and/or Description.
 
 ## Terraform
 
-1. Refer to the file [Steps to Access Oracle Cloud.md](./Steps%20to%20Access%20Oracle%20Cloud.md) to ensure you can login to the Oracle Cloud
 1. Create the following resources, which are shown in the pdf file [demo-stack-diagram.pdf](./demo-stack-diagram.pdf)
    - VCN `IC_VCN`
    - Subnets `IC_pub_snet-A` and `IC_pvt_snet-B`
