@@ -22,7 +22,7 @@ See https://git.mythics.dev/fdurrani/answers-mythics-devops-interview-2025.
 1. No collaboration with live humans
 
 ## Work environment
-For this problemset we will provide command line interface and code editor within Oracle Cloud Infrastructure. Access "https://idcs-f74b479abbd240379057587b66a852f1.identity.oraclecloud.com/ui/v1/signin" and credentials will be provided.
+For this problemset we will provide command line interface and code editor within Oracle Cloud Infrastructure. The login page and credentials will be provided.
 
 Once logged in you can click on developer tools where you can use cloud editor (code editor) and cloud shell (command line interface). You will see in the home directroy the code repository cloned where you can work through each problem.
 
