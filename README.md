@@ -44,7 +44,7 @@ Write a program in Python to accept an interactive input keyword string and by u
      - outgoing traffic to all
      - incoming ssh traffic from the internet
 5. Modify the public compute instance's metadata to add your ssh public key and also add the public key (we'll give it to you) to the private compute instance for grading purposes.
-6. Create `output.tf` to output public_ip of compute instance
+6. Create `outputs.tf` to output public_ip of compute instance
 
 
 ## Ansible
